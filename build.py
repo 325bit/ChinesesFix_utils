@@ -1,9 +1,31 @@
 import os
+from pathlib import Path
 
-# 打包 GitHub Scraper
-os.system("pyinstaller --onefile --name GitHub_Issue_Scraper github_scraper.py")
+# 获取项目根目录和src目录路径
+ROOT_DIR = Path(__file__).parent
+SRC_DIR = ROOT_DIR / "src"
+DIST_DIR = ROOT_DIR / "dist"
 
-# 打包 ID Searcher
-os.system("pyinstaller --onefile --name ID_Searcher id_searcher.py")
+def build_exe(script_name, exe_name):
+    """通用打包函数"""
+    cmd = f'pyinstaller --onefile --workpath "{ROOT_DIR / "build"}" --distpath "{DIST_DIR}" ' \
+          f'--specpath "{ROOT_DIR}" --name "{exe_name}" "{SRC_DIR / script_name}"'
+    print(f"正在打包 {script_name}...")
+    os.system(cmd)
 
-print("打包完成！可执行文件在 dist 目录")
+def main():
+    # 确保dist目录存在
+    DIST_DIR.mkdir(exist_ok=True)
+    
+    # 清理旧的打包文件
+    for f in DIST_DIR.glob("*.exe"):
+        f.unlink()
+    
+    # 打包两个脚本
+    build_exe("github_scraper.py", "GitHub_Issue_Scraper")
+    build_exe("issue_filter.py", "Issue_Filter")
+    
+    print(f"\n打包完成！可执行文件在 {DIST_DIR} 目录")
+
+if __name__ == "__main__":
+    main()

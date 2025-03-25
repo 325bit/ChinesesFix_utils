@@ -1,0 +1,7 @@
+| 语句id                         | 英文文本                                  | 简体中文文本              | 建议修正文本              | 备注说明                       |
+|--------------------------------|-------------------------------------------|---------------------------|---------------------------|-------------------------------|
+| vask_henry_cvicnej_souboj_u6s4 | ---    | --- | ---| ---     |
+| vask_henry_cvicnej_souboj_GeKg | ---    | --- | ---| ---     |
+| vask_henry_cvicnej_souboj_aaK2 | ---    | --- | ---| ---     |
+| vask_henry_cvicnej_souboj_8xgA | ---    | --- | ---| ---     |
+| vask_henry_dej_mi_palcat__4GgH |Give me a mace and a shield.|给我一根钉头锤和一张盾牌。| 照搬| 无    |

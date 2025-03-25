@@ -10,7 +10,8 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
+dist/github_token.txt
+dist/duplicate_content.txt
 downloads/
 eggs/
 .eggs/
