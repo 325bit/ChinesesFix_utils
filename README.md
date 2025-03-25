@@ -1,7 +1,3 @@
-我会将这段README修改为更规范的格式，并进行一些调整使其内容更加清晰。以下是修改后的版本：
-
----
-
 # ChinesesFix_utils
 
 ## 安装前置依赖
@@ -30,7 +26,7 @@ python build.py
 
 ## GitHub Issue Scraper 使用说明
 
-`GitHub_Issue_Scraper.exe` 会读取 `github_token.txt` 文件中的 GitHub Token。如果你的 Token 拥有对某个 repository 的访问权限，它将会抓取该 repository 中的 issues，并将其保存到 `all_issue.txt` 文件中。不知道什么是GitHub Token的问AI。
+`GitHub_Issue_Scraper.exe` 会读取 `github_token.txt` 文件中的 GitHub Token。如果你的 Token 拥有对某个 repository 的访问权限，它将会抓取该 repository 中的 issues，并将其保存到 `dist\all_issue.txt` 文件中。你也可以直接去dist文件夹下我爬好的`all_issue.txt`。
 
 例如：
 
