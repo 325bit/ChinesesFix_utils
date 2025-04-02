@@ -1,4 +1,6 @@
 import os
+from time import sleep
+
 
 def read_ids_from_my_issue(file_path):
     """读取my_issue.txt中的ID并返回ID列表、ID对应行、表头、分隔线"""
@@ -88,6 +90,7 @@ def main():
         print(f"处理完成，重复内容已写入 {output_duplicate}")
     else:
         print("输入错误，请输入1或2。")
+    sleep(1)
 
 if __name__ == '__main__':
     main()

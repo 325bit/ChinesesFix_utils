@@ -31,24 +31,25 @@ def validate_token(token):
 
 
 def save_issues_to_file(repo, output_file):
-    all_issues = []
     issues = repo.get_issues(state="all")
 
-    for issue in issues:
-        comments = [{"body": c.body} for c in issue.get_comments()]
-        all_issues.append({
-            "number": issue.number,
-            "title": issue.title,
-            "body": issue.body,
-            "state": issue.state,
-            "comments": comments,
-            "url": issue.html_url
-        })
-
     with open(output_file, "w", encoding="utf-8") as f:
-        for issue in all_issues:
-            f.write(json.dumps(issue, ensure_ascii=False) + "\n\n----------------------------------------------------------------------------------\n\n")
+        f.write("")
 
+    with open(output_file, "a", encoding="utf-8") as f:  # 改为追加模式
+        for idx, issue in enumerate(issues, 1):
+            issue_data = {
+                "number": issue.number,
+                "title": issue.title,
+                "body": issue.body,
+                "state": issue.state,
+                "comments": [{"body": c.body} for c in issue.get_comments()],
+                "url": issue.html_url
+            }
+
+            f.write(json.dumps(issue_data, ensure_ascii=False) + "\n\n----------------------------------------------------------------------------------\n\n")
+
+            print(f"已保存 issue #{issue.number} 到 {output_file} ")
 
 def main():
     token = get_github_token()
