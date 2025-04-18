@@ -1,3 +1,11 @@
 | 语句id                         | 英文文本                                  | 简体中文文本              | 建议修正文本              | 备注说明                       |
 |--------------------------------|-------------------------------------------|---------------------------|---------------------------|-------------------------------|
+| lich_lichtenst_no_to_me_p_Zd7F |Zizka is in the service of Prokop of Luxembourg, King Wenceslas's cousin!|杰式卡为卢森堡的普罗科普效力，瓦茨拉夫国王的表弟！|表弟 -> 堂弟| ---     |
+| jost_markrabe__pochop_ze__X2eL |Bear in mind that my dear cousin, His Majesty King Wenceslas, has many supporters.|记住，我亲爱的表弟，瓦茨拉夫国王陛下，有很多支持者。| 表弟 -> 堂弟 | ---     |
+| vask_henry_dej_mi_palcat__4GgH |Give me a mace and a shield.|给我一根钉头锤和一张盾牌。| 照搬| 无    |
+| vask_henry_dej_mi_palcat__4GgH |Give me a mace and a shield.|给我一根钉头锤和一张盾牌。| 照搬| 无    |
+| vask_henry_dej_mi_palcat__4GgH |Give me a mace and a shield.|给我一根钉头锤和一张盾牌。| 照搬| 无    |
+| vask_henry_dej_mi_palcat__4GgH |Give me a mace and a shield.|给我一根钉头锤和一张盾牌。| 照搬| 无    |
+| vask_henry_dej_mi_palcat__4GgH |Give me a mace and a shield.|给我一根钉头锤和一张盾牌。| 照搬| 无    |
+| vask_henry_dej_mi_palcat__4GgH |Give me a mace and a shield.|给我一根钉头锤和一张盾牌。| 照搬| 无    |
 | vask_henry_dej_mi_palcat__4GgH |Give me a mace and a shield.|给我一根钉头锤和一张盾牌。| 照搬| 无    |

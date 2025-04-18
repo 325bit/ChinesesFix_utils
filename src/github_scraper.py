@@ -56,7 +56,7 @@ def main():
     g = Github(token)
 
     # 默认值为 acsigcn/ChinesesFix
-    repo_name = input("请输入仓库名称 (格式: owner/repo), 默认: acsigcn/ChinesesFix: ").strip() or "acsigcn/ChinesesFix"
+    repo_name = input("请输入仓库名称 (格式: owner/repo), 默认: acsigcn/KCD2-Simplified-Chinese-Localization-Improvement: ").strip() or "acsigcn/KCD2-Simplified-Chinese-Localization-Improvement"
     
     try:
         repo = g.get_repo(repo_name)
